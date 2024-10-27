@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт для описания и бронирования</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <h1>VR EFFECT Киржач</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="pages/about.html">О нас</a></li>
+                <li><a href="pages/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основное описание -->
+    <main>
+        <section class="description">
+            <h2>Описание услуги</h2>
+            <p>Здесь будет краткое описание услуги или места. Расскажите, что делает ваше предложение уникальным, добавьте интересные факты и информацию, которая привлечет посетителей.</p>
+            <p>Добавьте сюда важные детали, например: местоположение, часы работы, особые условия и т.д.</p>
+        </section>
+
+        <!-- Бронирование -->
+        <section class="booking">
+            <h2>Забронировать</h2>
+            <form action="/booking" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Дата бронирования:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Время:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Количество гостей:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+                <button type="submit">Забронировать</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2024 VR Effect Киржач. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
